@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Hello Word</title>
+    <style>
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30pt;
+            color:blue;
+            text-shadow: 2px 2px 2px black; /*{2} = deslocamento lateral Dir   {2} deslocamento vertical para baixo  {2} espalhamento da sombra {black} cor */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Olá,Mundo</h1>  
+    <h2>Hello Word</h2>      
+    <h1>Olá manito </h1>
+</body>
+</html>
