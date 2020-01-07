@@ -1,0 +1,17 @@
+<div class="control-group">
+				<label class="control-label">Selecione o dia:</label>
+				<div class="controls">
+					<label class="span">
+						<input type="checkbox" value="" style="margin-bottom: 5px;margin-right: 2px;" checked>Java
+					</label>
+					<label class="span">
+						<input type="checkbox" value="" style="margin-bottom: 5px;margin-right: 2px;" checked>Html
+					</label>
+					<label class="span">
+						<input type="checkbox" value"" style="margin-bottom: 5px;margin-right: 2px;" checked>CSS
+					</label>
+					<label class="span">
+						<input type="checkbox" value"" style="margin-bottom: 5px;margin-right: 2px;" checked>JavaScript
+					</label>
+				</div>
+			</div>
