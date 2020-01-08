@@ -57,6 +57,33 @@ function selectAll(source) {
 <input type="checkbox" />Bar 2<br />
 <input type="checkbox" />Bar 3<br />
 <input type="checkbox" />Bar 4<br />
+------------------------------------------------------------------------<br>
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script>
+    	jQuery(document).ready(function() {
+    		jQuery('#checkBoxAll').click(function() {
+    			if (jQuery(this).is(":checked"))
+    				jQuery('.chkCheckBoxId').prop('checked', true);
+    			else
+    				jQuery('.chkCheckBoxId').prop('checked', false);
+    		});
+    	});
+</script>
+</head>
+<body>
+
+<input type="checkbox" id="checkBoxAll">Selecionar tudo
+<br><br>
+<input type="checkbox" class="chkCheckBoxId">A
+<input type="checkbox" class="chkCheckBoxId">B
+<input type="checkbox" class="chkCheckBoxId">C
+<input type="checkbox" class="chkCheckBoxId">D
+</body>
+</html>
+
 
 
 
