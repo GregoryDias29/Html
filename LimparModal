@@ -22,3 +22,25 @@ $('#cancel').on('click', function() {
 
 
 <--! http://live.datatables.net/jowakeya/216/edit -->
+<--! Ex utilizado a cima os ajustes feitos
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script>
+$('button').on('click', function() {
+  $('#form1 input').each(function() {
+     $(this).val(''); 
+  });
+});
+</script>
+
+<form id="form1">
+  <input value="input1">
+  <input value="input2">
+  <input value="input3">
+  <input value="input4">
+  <input value="input5">
+</form>
+
+<button>Esconder Modal</button>
+
+-->
