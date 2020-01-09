@@ -1,0 +1,17 @@
+<script>
+let td = document.querySelectorAll('#idade');
+let apagar = document.querySelector('#apagar');
+
+apagar.onclick = function(){
+  for(item in td) 
+  if(td[item].parentNode) td[item].parentNode.removeChild(td[item]);
+}
+</script>
+<table id="tblItens" width="400px">
+	<tr>
+		<td id="name">1</td>
+		<td id="idade">2</td>
+		<td id="ruua">3</td>
+	</tr>
+</table>
+<button id="apagar"> apagar </button>
