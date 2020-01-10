@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="pt-br">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agradecimento</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans !important;
+      color: #474646;
+    }
+
+    .content-wrapper {
+      width: 100%;
+      height: 100vh;
+      background-image: url('http://dw.fbiz.com.br/HondaMotos/PosVenda/PesquisaTSI/images/2017-02-22-pagina-agradecimento-bg-image_1.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    .content-box {
+      width: 100%;
+      max-width: 500px;
+      min-height: 390px;
+      background: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+
+    }
+
+    .content-box img {
+      width: 100%;
+    }
+
+    .border-box__bottom {
+      position: absolute;
+      bottom: 0;
+    }
+
+    .content-box__holder {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .content-box__title {
+      font-size: 24px;
+      line-height: 30px;
+      text-align: left;
+    }
+
+    .content-box__message {
+      font-size: 14px;
+      text-align: left;
+      line-height: 20px;
+      margin: 30px 0;
+      max-width: 396px;
+    }
+
+    .content-box__honda {
+      font-size: 20px;
+      line-height: 26px;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .contact__holder {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+
+    .contact__title {
+      font-size: 15px;
+      line-height: 25px;
+      margin: 0;
+    }
+
+    .contact__text {
+      display: inline-block;
+      font-size: 15px;
+      line-height: 20px;
+      margin: 0 50px 0 0;
+    }
+
+    .contact__text strong {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="content-wrapper">
+    <div class="content-box">
+      <img src="http://image.motos.myhonda.com.br/lib/fe9113727666007b73/m/1/eba710a2-beeb-4ba1-897c-228c1292cde1.jpg" alt="Honda" />
+      <div class="content-box__holder">
+        <h2 class="content-box__title">Agradecimento</h2>
+        <p class="content-box__message">Muito obrigada por sua valiosa contribuição!<br>
+          Sempre que necessário, nossos especialistas terão o maior prazer em atendê-lo(a).</p>
+          <div class="contact__holder">
+            <h3 class="contact__title">Contato</h3>
+            <p class="contact__text">Automóveis: <strong>0800 017 12 13</strong></p>
+            <p class="contact__text">Motocicletas: <strong>0800 055 22 21</strong></p>
+          </div>
+        <p class="content-box__honda"><strong>Honda</strong></p>
+      </div>
+      <img class="border-box__bottom" src="http://image.motos.myhonda.com.br/lib/fe9113727666007b73/m/1/315c32fa-c1ce-4027-825c-eeba44aefcb3.jpg" alt="Honda" />
+    </div>
+  </div>
+</body>
+</html>
