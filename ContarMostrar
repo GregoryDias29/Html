@@ -1,0 +1,14 @@
+input:checked {
+  counter-increment: checked-inputs
+}
+
+h2::after {
+  content: 'Itens marcados: ' counter(checked-inputs)
+}
+
+<input type='checkbox'>
+<input type='checkbox'>
+<input type='checkbox'>
+<input type='checkbox'>
+
+<h2></h2>
