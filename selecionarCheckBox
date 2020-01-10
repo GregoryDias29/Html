@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title>Varrer checkbox</title>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+             
+            var vetCursos = ["Radiologia", "Medicina", "Nutrição", "Biomedicina", "Farmácia"];
+            /*
+                Acima criamos vetores com todas as opções disponpiveis para a seleção na mesma ordem que esta no formulário.
+                Isto é necessário para evitar usar acentuação no atributo value, do checkbox.
+            */
+             
+            document.addEventListener("DOMContentLoaded", function(){ //Quando o documento for carregado.
+                document.getElementById("btnSelecionar").addEventListener("click", function(){ //Quando houver o clique do botão.
+                 
+                    var elementos = document.getElementsByClassName("cbCurso"); //Gravamos na variável todos elementos que contém a class cbCurso.
+                     
+                    for(i = 0; i < elementos.length; i++){ //For começando de 0 e vai até a quantidade de elementos encontrado.
+                        if(elementos[i].checked){ //Verificamos se o elemento esta com o atributo checked ativo, retorna true ou false.
+                            document.getElementById("selecaoCursos").innerHTML += "<li>"+vetCursos[i]+"</li>"; 
+                            /*
+                                Acima inserimos no UL um elemento Li contendo o valor de vetor na mesma posição que tem o valor da variável i.
+                                 
+                                Se o segundo checkbox for selecionado, então o valor de i é 1 e na posição 1 do vetor é Medicina, a mesma que foi selecionada.
+                            */
+                        }
+                    }
+                     
+                    document.getElementById("btnSelecionar").disabled = "disabled"; //Desativamos o botão.
+                });
+            });
+        </script>
+    <head>
+    <body>
+        <p>Quais cursos são de seu interesse?</p>
+        <input type="checkbox" name="cbCurso" value="1" class="cbCurso" /> Radiologia <br />
+        <input type="checkbox" name="cbCurso" value="2" class="cbCurso" /> Medicina <br />
+        <input type="checkbox" name="cbCurso" value="3" class="cbCurso" /> Nutrição <br />
+        <input type="checkbox" name="cbCurso" value="4" class="cbCurso" /> Biomedicina <br />
+        <input type="checkbox" name="cbCurso" value="5" class="cbCurso" /> Farmácia <br />
+            <br />
+        <button id="btnSelecionar">Selecionar</button>
+        <br /><hr /><br />
+        <ul id="selecaoCursos">
+             
+        </ul>
+    </body>
+</html> 
