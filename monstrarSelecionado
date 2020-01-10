@@ -1,0 +1,20 @@
+$('input[type="checkbox"]').on('change', function() {
+   var total = 0;
+   var servicos = '';
+   $('input[type="checkbox"]:checked').each(function() {
+      total += parseInt($(this).val());
+      servicos += $(this).data('servico')+ '<br>';
+   });
+   $('input[name="totalValor"]').val(total);
+   $('.servicos').html(servicos);
+});
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<input type="checkbox" value="140" data-servico="dentista">140<br>
+<input type="checkbox" value="130" data-servico="cardiologista">130<br>
+<input type="checkbox" value="70" data-servico="oftalmologista">70<br>
+<input name="totalValor" type="number">
+<div class="servicos">
+  
+</div>
