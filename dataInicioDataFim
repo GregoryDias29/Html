@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Data</title>
+</head>
+<body>
+<style>
+
+h1{
+    text-align: center;
+    text-transform: uppercase; 
+    font-weight: normal;
+}
+
+</style>
+
+<h1>Abre o console e veja a magia</h1>
+
+<script>
+var data = new Date();
+
+var dia = data.getDate();
+
+var mes = data.getMonth();
+
+var ano = data.getFullYear();
+
+window.dataInicio = 'Data de hoje:   ' + dia + '/' + (mes+'1') + '/' + ano;
+
+window.dataFim = 'Data de amanha: ' + (dia+1) + '/' + (mes+'1') + '/' + ano;
+
+console.log(dataInicio);
+console.log(dataFim);
+    
+    
+    
+</script>    
+</body>
+</html>
