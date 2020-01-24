@@ -34,7 +34,45 @@ window.dataFim = 'Data de amanha: ' + (dia+1) + '/' + (mes+'1') + '/' + ano;
 
 console.log(dataInicio);
 console.log(dataFim);
-    
+/*
+JavaScript: Obter e mostrar data e hora
+Posted on 03/04/2009 by Aurelio Jargas
+Para obter a data (e hora) atual com o JavaScript, basta instanciar um objeto novo do tipo Date. Este objeto traz vários métodos para obter cada pedaço da data e da hora. Veja um exemplo:
+
+// Obtém a data/hora atual
+var data = new Date();
+
+// Guarda cada pedaço em uma variável
+var dia     = data.getDate();           // 1-31
+var dia_sem = data.getDay();            // 0-6 (zero=domingo)
+var mes     = data.getMonth();          // 0-11 (zero=janeiro)
+var ano2    = data.getYear();           // 2 dígitos
+var ano4    = data.getFullYear();       // 4 dígitos
+var hora    = data.getHours();          // 0-23
+var min     = data.getMinutes();        // 0-59
+var seg     = data.getSeconds();        // 0-59
+var mseg    = data.getMilliseconds();   // 0-999
+var tz      = data.getTimezoneOffset(); // em minutos
+
+// Formata a data e a hora (note o mês + 1)
+var str_data = dia + '/' + (mes+1) + '/' + ano4;
+var str_hora = hora + ':' + min + ':' + seg;
+
+// Mostra o resultado
+alert('Hoje é ' + str_data + ' às ' + str_hora);
+Note a pegadinha do mês, que inicia com zero e não um. Se você não somar 1, janeiro aparecerá como 0 e dezembro como 11. Já o dia do mês vai de 1 a 31, não é preciso somá-lo.
+
+O dia da semana também inicia em zero, representando o domingo, e vai até seis (sábado). Use um array para mostrar o dia da semana por extenso:
+
+var data = new Date();
+var dias = new Array(
+ 'domingo','segunda','terça','quarta','quinta','sexta','sábado'
+);
+
+alert('Hoje é ' + dias[data.getDay()]);
+
+
+*/
     
     
 </script>    
