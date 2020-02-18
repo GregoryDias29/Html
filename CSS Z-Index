@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <title>Entendendo a propriedade z-index</title>
+  <style type="text/css">
+ 
+#posiciona1{ /*Vermelho*/
+background-color: #F00;
+width: 50px;
+height: 50px;
+position: absolute;
+z-index:4;
+}
+ 
+#posiciona2{ /*Verde*/
+background-color: #0F0;
+width: 50px;
+height: 50px;
+position: absolute;
+z-index:2;/*determina quem ficara na frente de quem*/
+}
+ 
+#posiciona3{ /*Azul*/
+background-color: #00F;
+width: 50px;
+height: 50px;
+position: absolute;
+z-index:3;
+}
+       
+p{
+  text-align: center;
+}
+ 
+</style>
+</head>
+<body>
+ 
+<div  id="posiciona1"></div>
+<div  id="posiciona2"></div>
+<div  id="posiciona3"></div> 
+<br>
+<br>
+<br>
+<p>Como podemos ver só está sendo exibido 1 box, que é o último (terceira div).<br> 
+Isso acontece porque os elementos vão recebendo automaticamente valores de<br> 
+z-index=1, z-index=2 e assim por diante. Nesse caso como o último box fica <br>
+com o maior z-index, é ele quem aparece na frente.<p>
+ 
+</body>
+</html>
